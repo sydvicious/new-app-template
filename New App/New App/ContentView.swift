@@ -13,9 +13,13 @@ struct ContentView: View {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Text("\(getText())")
         }
         .padding()
+    }
+    
+    func getText() -> String {
+        return "Hello, world!"
     }
 }
 
